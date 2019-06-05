@@ -1,0 +1,11 @@
+$http({
+    url : https://api.matdespatch.com/api/services/check,
+    method : 'POST',
+    data : $.param(formData), // pass in data as strings
+    headers : {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'id': $id,
+        'session': $session
+        },
+        timeout : config.timeout
+    })
